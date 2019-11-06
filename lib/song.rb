@@ -6,6 +6,8 @@ def initialize(title)
 @title = title
 end
 
+
+## class methods 
 def self.all
   @@all
 end
