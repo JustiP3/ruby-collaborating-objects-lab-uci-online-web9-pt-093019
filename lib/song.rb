@@ -7,7 +7,7 @@ def initialize(title)
 end
 
 
-## class methods 
+## class methods
 def self.all
   @@all
 end
