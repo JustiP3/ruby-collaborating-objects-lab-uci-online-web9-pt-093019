@@ -30,12 +30,7 @@ def self.all
 end #end of method
 
 def self.find_or_create_by_name(artist_name)
-artist = @@all.detect {|artist_instance| artist_instance.name == artist_name}
-if artist
-  artist
-else
-  new(artist_name)
-end #end of if block
+@@all.detect {|artist_instance| artist_instance.name == artist_name} || new(artist_name)
 end #end of method
 
 
