@@ -20,7 +20,7 @@ songs.each {|instance| puts instance.title}
 end
 
 def songs
-
+Song.all.select {|song_instance| song_instance.artist == self}
 
 end
 
