@@ -9,7 +9,7 @@ end
 
 def files
 #path {|file| files << file}
-binding.pry 
+binding.pry
 end
 
 end #end of class
