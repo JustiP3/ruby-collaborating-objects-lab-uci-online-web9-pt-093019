@@ -11,6 +11,11 @@ def save
   @@all << self
 end
 
+def artist_name=(name)
+#  @@all.detect {|artist_instance| artist_instance.name == artist_name} || new(artist_name)
+Artist.find_or_create_by_name(name)
+
+end 
 
 
 ## class methods
