@@ -4,7 +4,12 @@ attr_accessor :title, :artist
 
 def initialize(title)
 @title = title
+save
 end
+
+def save
+  @@all << self 
+end 
 
 
 ## class methods
