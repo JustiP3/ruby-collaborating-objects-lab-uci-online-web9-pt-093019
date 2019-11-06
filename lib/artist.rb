@@ -19,6 +19,11 @@ def print_songs
 songs.each {|instance| puts instance.title}
 end
 
+def songs 
+
+
+end 
+
 ### Class Methods ###
 def self.all
 @@all
