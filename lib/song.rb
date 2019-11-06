@@ -14,7 +14,8 @@ end
 def new_by_filename(filename)
 split_array = filename.split(" - ")
 new_song = Song.new(split_array[1])
-Artist.find_or_create_by_name(split_array[0]).add_song(new_song)
+
+new_song.artist(find_or_create_by_name(split_array[0]))
 end
 
 ## class methods
