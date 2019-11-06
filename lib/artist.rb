@@ -8,7 +8,7 @@ save
 end #end of initialize
 
 def add_song(song_instance)
-song_instance.artist = self  
+song_instance.artist = self
 end #end of add_song method
 
 def save
