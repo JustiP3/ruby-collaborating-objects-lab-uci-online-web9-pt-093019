@@ -33,6 +33,6 @@ def self.find_or_create_by_name(artist_name)
 @@all.detect {|artist_instance| artist_instance.name == artist_name} || new(artist_name)
 end #end of method
 
-#find by name 
+#find by name
 
 end #end of class
