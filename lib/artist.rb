@@ -1,16 +1,19 @@
 class Artist
-attr_accessor :name, :songs
-@@all
+attr_accessor :name
+@@all = []
 
 def initialize(name)
 @name = name
-@songs = []
-@@all << self
+save
 end #end of initialize
 
 def add_song(song_instance)
-songs << song_instance
+songs
 end #end of add_song method
+
+def save
+  @@all << self
+end
 
 def print_songs
 songs.each {|instance| puts instance.title}
