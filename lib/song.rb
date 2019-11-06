@@ -8,8 +8,8 @@ save
 end
 
 def save
-  @@all << self 
-end 
+  @@all << self
+end
 
 
 ## class methods
