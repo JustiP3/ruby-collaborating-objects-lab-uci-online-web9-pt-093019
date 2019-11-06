@@ -13,7 +13,7 @@ end
 
 def artist_name=(name)
 #  @@all.detect {|artist_instance| artist_instance.name == artist_name} || new(artist_name)
-self.artist = Artist.find_or_create_by_name(name)
+artist = Artist.find_or_create_by_name(name)
 end
 
 
