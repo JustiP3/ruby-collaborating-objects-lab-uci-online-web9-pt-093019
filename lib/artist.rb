@@ -16,7 +16,7 @@ def save
 end
 
 def print_songs
-songs.each {|instance| puts instance.title}
+songs.each {|instance| puts instance.name}
 end
 
 def songs
